@@ -58,6 +58,12 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# Screenshots
+
+bindsym Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Shift+$mod+S exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+
 # focus the child container
 #bindsym $mod+d focus child
 
