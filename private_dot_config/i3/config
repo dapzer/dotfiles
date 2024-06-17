@@ -71,8 +71,8 @@ for_window [class="Vesktop"] layout tabbed
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 tiling_drag modifier titlebar
-# exec_always setxkbmap -model pc105 -layout us,ru -option grp:lwin_space_toggle
-bindsyb $mod+space exec setxkbmap -model pc105 -layout us,ru
+exec_always setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
+# bindsym $mod+Space exec setxkbmap -model pc105 -layout us,ru
 
 # Runners 
 bindsym $mod+Return exec tilix
