@@ -47,6 +47,8 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
+exec_always feh --no-fehbg --bg-fill ~/Pictures/rocket.jpg
+
 exec --no-startup-id killall picom && picom
 exec --no-startup-id killall i3bar
 exec --no-startup-id ~/.config/polybar/launch.sh
@@ -74,7 +76,7 @@ bindsyb $mod+space exec setxkbmap -model pc105 -layout us,ru
 
 # Runners 
 bindsym $mod+Return exec tilix
-bindsym $mod+w exec tilix
+bindcode $mod+49 exec tilix
 bindsym $mod+q kill
 
 bindsym $mod+e exec nemo
