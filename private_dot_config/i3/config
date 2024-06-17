@@ -3,6 +3,45 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:monospace 8
 
+# Define names for default workspaces for which we configure key bindings later on.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# monitors
+set $Mon1 DP-4
+set $Mon2 DP-2
+
+# workspace assignment
+workspace $ws1 output $Mon1
+workspace $ws2 output $Mon1
+workspace $ws3 output $Mon1
+workspace $WS4 output $Mon1
+workspace $WS5 output $Mon1
+workspace $ws6 output $Mon1
+workspace $ws7 output $Mon2
+workspace $ws8 output $Mon2
+workspace $ws9 output $Mon2
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
 # Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -10,20 +49,46 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id killall picom && picom
 exec --no-startup-id killall i3bar
-exec --no-startup-id ~./config/polybar/launch.sh
+exec --no-startup-id ~/.config/polybar/launch.sh
+
+exec telegram-desktop
+exec slack
+exec discord
+exec spotify
+
+# Assign Workspaces:
+assign [class="Telegram"] $ws7
+assign [class="Slack"] $ws7
+assign [class="discord"] $ws7
+assign [class="Spotify"] $ws8
+
+for_window [class="Telegram"] layout tabbed
+for_window [class="Slack"] layout tabbed
+for_window [class="Vesktop"] layout tabbed
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 tiling_drag modifier titlebar
-exec_always setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+# exec_always setxkbmap -model pc105 -layout us,ru -option grp:lwin_space_toggle
+bindsyb $mod+space exec setxkbmap -model pc105 -layout us,ru
 
 # Runners 
 bindsym $mod+Return exec tilix
 bindsym $mod+w exec tilix
 bindsym $mod+q kill
 
-bindsym $mod+e exec dolphin
+bindsym $mod+e exec nemo
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Moving on workspace
 bindsym $mod+Left focus left
@@ -66,45 +131,6 @@ bindsym Shift+$mod+S exec --no-startup-id maim --select | xclip -selection clipb
 
 # focus the child container
 #bindsym $mod+d focus child
-
-# monitors
-set $Mon1 DP-4
-set $Mon2 DP-2
-
-# Define names for default workspaces for which we configure key bindings later on.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-
-# workspace assignment
-workspace $ws1 output $Mon1
-workspace $ws2 output $Mon1
-workspace $ws3 output $Mon1
-workspace $WS4 output $Mon1
-workspace $WS5 output $Mon1
-workspace $ws6 output $Mon1
-workspace $ws7 output $Mon2
-workspace $ws8 output $Mon2
-workspace $ws9 output $Mon2
-
-# switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
