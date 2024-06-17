@@ -59,7 +59,7 @@ exec discord
 exec spotify
 
 # Assign Workspaces:
-assign [class="Telegram"] $ws7
+assign [class="telegram-desktop"] $ws7
 assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="Spotify"] $ws8
