@@ -55,19 +55,20 @@ exec_always feh --no-fehbg --bg-fill ~/Pictures/rocket.jpg
 exec --no-startup-id killall picom && picom
 exec --no-startup-id killall i3bar
 exec --no-startup-id ~/.config/polybar/launch.sh
+# exec --no-startup-id ~/reassignment
 
 exec telegram-desktop
 exec slack
 exec discord
 exec spotify
-exec obs --startreplaybuffer
+exec obs --scene="replay" --startreplaybuffer
 
 # Assign Workspaces:
 assign [class="telegram-desktop"] $ws7
 assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="Spotify"] $ws8
-assign [class="Obs"] $ws10
+assign [class="obs"] $ws10
 
 for_window [class="Telegram"] layout tabbed
 for_window [class="Slack"] layout tabbed
