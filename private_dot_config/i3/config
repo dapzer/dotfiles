@@ -175,5 +175,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Styles
 gaps outer 6px
 gaps top 0px
+for_window [class="^.*"] border pixel 4
