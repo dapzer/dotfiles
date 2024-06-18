@@ -29,6 +29,7 @@ workspace $ws6 output $Mon1
 workspace $ws7 output $Mon2
 workspace $ws8 output $Mon2
 workspace $ws9 output $Mon2
+workspace $ws10 output $Mon2
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -59,12 +60,14 @@ exec telegram-desktop
 exec slack
 exec discord
 exec spotify
+exec obs --startreplaybuffer
 
 # Assign Workspaces:
 assign [class="telegram-desktop"] $ws7
 assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="Spotify"] $ws8
+assign [class="Obs"] $ws10
 
 for_window [class="Telegram"] layout tabbed
 for_window [class="Slack"] layout tabbed
