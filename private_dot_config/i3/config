@@ -57,6 +57,7 @@ exec --no-startup-id killall i3bar
 exec --no-startup-id ~/.config/polybar/launch.sh
 # exec --no-startup-id ~/reassignment
 
+exec nekoray
 exec telegram-desktop
 exec slack
 exec discord
