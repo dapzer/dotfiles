@@ -105,6 +105,9 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+bindsym $mod+a focus left
+bindsym $mod+s focus right
+
 # Window moving
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -119,7 +122,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mo.+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+Shift+e layout toggle split
 
@@ -130,7 +133,7 @@ bindsym $mod+Shift+f floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+shift+a focus parent
 
 # Screenshots
 
@@ -155,10 +158,11 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Tab workspace next
-bindsym F1 focus output $Mon1
 bindsym $mod+Ctrl+Left workspace prev
+
+bindsym $mod+Tab workspace next
 bindsym $mod+Ctrl+Tab workspace prev
+bindsym F1 focus output $Mon1
 bindsym F2 focus output $Mon2
 
 # reload the configuration file
