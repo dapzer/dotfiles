@@ -34,8 +34,11 @@ workspace $ws10 output $Mon2
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
+bindsym $mod+$alt+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
+bindsym $mod+$alt+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
+bindsym $mod+$alt+3 workspace number $ws3
 bindsym $mod+$alt+q workspace number $ws4
 bindsym $mod+$alt+w workspace number $ws5
 bindsym $mod+$alt+e workspace number $ws6
