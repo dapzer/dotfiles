@@ -1,4 +1,5 @@
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:monospace 8
@@ -35,13 +36,13 @@ workspace $ws10 output $Mon2
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+bindsym $mod+$alt+q workspace number $ws4
+bindsym $mod+$alt+w workspace number $ws5
+bindsym $mod+$alt+e workspace number $ws6
+bindsym $mod+$alt+a workspace number $ws7
+bindsym $mod+$alt+s workspace number $ws8
+bindsym $mod+$alt+d workspace number $ws9
+bindsym $mod+$alt+z workspace number $ws10
 
 # Autostart
 exec --no-startup-id dex --autostart --environment i3
