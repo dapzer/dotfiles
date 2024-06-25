@@ -1,0 +1,9 @@
+Host movietracker
+	HostName 185.254.97.132
+
+	user root
+
+Host *
+    ServerAliveInterval 30
+
+AddKeysToAgent yes
