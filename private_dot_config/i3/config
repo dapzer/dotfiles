@@ -199,7 +199,7 @@ bindsym $mod+r mode "resize"
 # Styles
 # gaps outer 6px
 gaps top 0px
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 2
 
 # colour of border, background, text, indicator, and child_border
 client.focused          #bf616a #2f343f #d8dee8 #C5C8C6 #C5C8C6
