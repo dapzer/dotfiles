@@ -55,7 +55,7 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secr
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id greenclip daemon>/dev/null
 
-exec_always feh --no-fehbg --bg-fill ~/Pictures/rocket.jpg
+exec_always feh --no-fehbg --bg-fill ~/Pictures/city.jpg
 
 exec --no-startup-id killall picom && picom
 exec --no-startup-id killall i3bar
