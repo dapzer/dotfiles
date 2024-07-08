@@ -1,6 +1,9 @@
 Host movietracker
 	HostName 185.254.97.132
+	user root
 
+Host selfhosted-services
+	HostName 5.42.76.132
 	user root
 
 Host *
