@@ -1,5 +1,7 @@
 source ~/.config/antigen.zsh
 
+
+antigen theme dpoggi
 antigen use oh-my-zsh
 
 antigen bundle git
@@ -23,4 +25,5 @@ alias cu="chezmoi re-add"
 alias rm="rm -irf"
 alias archclean="pacman -Qtdq | sudo pacman -Rns -"
 alias "dps"='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.State}}\t{{.Status}}"'
+alias "spotx"="bash <(curl -sSL https://spotx-official.github.io/run.sh)"
 #alias jq="fx"
