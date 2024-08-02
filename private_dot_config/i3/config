@@ -15,6 +15,8 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
 
 # monitors
 set $Mon1 DP-4
@@ -31,6 +33,8 @@ workspace $ws7 output $Mon2
 workspace $ws8 output $Mon2
 workspace $ws9 output $Mon2
 workspace $ws10 output $Mon2
+workspace $ws11 output $Mon2
+workspace $ws12 output $Mon2
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -46,6 +50,8 @@ bindsym $mod+$alt+a workspace number $ws7
 bindsym $mod+$alt+s workspace number $ws8
 bindsym $mod+$alt+d workspace number $ws9
 bindsym $mod+$alt+z workspace number $ws10
+bindsym $mod+$alt+x workspace number $ws11
+bindsym $mod+$alt+c workspace number $ws12
 
 # Autostart
 exec --no-startup-id dex --autostart --environment i3
