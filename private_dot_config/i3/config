@@ -73,6 +73,7 @@ exec discord
 exec telegram-desktop
 exec nekoray
 exec spotify
+exec pachca
 exec obs --scene="replay" --startreplaybuffer
 
 # Assign Workspaces:
@@ -80,6 +81,7 @@ exec obs --scene="replay" --startreplaybuffer
 assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="TelegramDesktop"] $ws7
+assign [class="pachca"] $ws7
 assign [class="Spotify"] $ws8
 assign [class="obs"] $ws10
 
