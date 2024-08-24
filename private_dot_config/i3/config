@@ -68,17 +68,16 @@ exec --no-startup-id killall i3bar
 exec --no-startup-id ~/.config/polybar/launch.sh
 # exec --no-startup-id ~/reassignment
 
-exec slack
 exec discord
 exec telegram-desktop
 exec nekoray
 exec spotify
-exec pachca
+exec ~/bin/pachca.AppImage
+
 exec obs --scene="replay" --startreplaybuffer
 
 # Assign Workspaces:
 
-assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="TelegramDesktop"] $ws7
 assign [class="pachca"] $ws7
