@@ -16,14 +16,18 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
+plugins=(z)
+
 eval "$(starship init zsh)"
 
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
 
 alias cu="chezmoi re-add"
+alias wifi="sh ~/bin/scripts/wifi-menu.sh"
 alias rm="rm -irf"
 alias archclean="pacman -Qtdq | sudo pacman -Rns -"
 alias "dps"='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.State}}\t{{.Status}}"'
 alias "spotx"="bash <(curl -sSL https://spotx-official.github.io/run.sh)"
 #alias jq="fx"
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
