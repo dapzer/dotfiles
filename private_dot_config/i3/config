@@ -54,18 +54,18 @@ bindsym $mod+$alt+x workspace number $ws11
 bindsym $mod+$alt+c workspace number $ws12
 
 # Autostart
-exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id nm-applet
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id greenclip daemon>/dev/null
+exec --no-startup-id "dex --autostart --environment i3"
+exec --no-startup-id "xss-lock --transfer-sleep-lock -- i3lock --nofork"
+exec --no-startup-id "nm-applet"
+exec --no-startup-id "/usr/bin/gnome-keyring-daemon --start --components=ssh,secrets"
+exec --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+exec --no-startup-id "greenclip daemon>/dev/null"
 
-exec_always feh --no-fehbg --bg-fill ~/Pictures/city.jpg
+exec_always "feh --no-fehbg --bg-fill ~/Pictures/city.jpg"
 
-exec --no-startup-id killall picom && picom
-exec --no-startup-id killall i3bar
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id "killall picom && picom"
+exec --no-startup-id "killall i3bar"
+exec --no-startup-id "~/.config/polybar/launch.sh"
 # exec --no-startup-id ~/reassignment
 
 exec discord
@@ -103,9 +103,9 @@ bindsym $mod+q kill
 
 bindsym $mod+e exec nemo
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
-bindsym $mod+v exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
-bindsym $mod+k exec --no-startup-id $terminal -e calcurse
-bindsym --release $mod+c exec --no-startup-id ~/bin/scripts/xcolor-pick.sh
+bindsym $mod+v exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard"
+bindsym $mod+k exec --no-startup-id "$terminal -e calcurse"
+bindsym --release $mod+c exec --no-startup-id "~/bin/scripts/xcolor-pick.sh"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec "light -A 5"
