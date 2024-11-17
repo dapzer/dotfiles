@@ -1,11 +1,14 @@
+Include ~/.ssh/configPrivate
+
 Host movietracker
 	HostName 185.254.97.132
 	user root
 
-Host selfhosted-services
-	HostName 5.42.76.132
+Host device
+	HostName 192.168.100.1
 	user root
-
+	port 65222
+	
 Host *
     ServerAliveInterval 30
 
