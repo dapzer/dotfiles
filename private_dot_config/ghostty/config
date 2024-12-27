@@ -2,15 +2,8 @@
 
 font-family = "JetBrainsMono Nerd Font"
 font-size = 16
-# theme = Broadcast
-# theme = Twilight
-# theme = Ryuuko
-# theme = Rapture
-# theme = Galaxy
-# theme = DotGov
 theme = Dark Modern
-# theme = Chester
-# theme = catppuccin-mocha
+# theme = rose-pine
 gtk-titlebar = false
 confirm-close-surface=false
 
