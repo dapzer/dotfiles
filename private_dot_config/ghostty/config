@@ -11,6 +11,7 @@ font-size = 16
 theme = Dark Modern
 # theme = Chester
 gtk-titlebar = false
+confirm-close-surface=false
 
 # Binds
 
