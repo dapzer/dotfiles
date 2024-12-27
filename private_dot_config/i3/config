@@ -96,7 +96,7 @@ exec_always setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
 # bindsym $mod+Space exec setxkbmap -model pc105 -layout us,ru
 
 # Runners 
-set $terminal tilix
+set $terminal ghostty
 
 bindsym $mod+Return exec $terminal
 bindcode $mod+49 exec $terminal
