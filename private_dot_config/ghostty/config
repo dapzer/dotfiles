@@ -1,6 +1,6 @@
 # General
 
-font-family = "JetBrains Mono Nerd"
+font-family = "JetBrainsMono Nerd Font"
 font-size = 16
 # theme = Broadcast
 # theme = Twilight
@@ -10,6 +10,7 @@ font-size = 16
 # theme = DotGov
 theme = Dark Modern
 # theme = Chester
+# theme = catppuccin-mocha
 gtk-titlebar = false
 confirm-close-surface=false
 
