@@ -1,0 +1,23 @@
+# General
+
+font-family = "JetBrains Mono Nerd"
+font-size = 16
+# theme = Broadcast
+# theme = Twilight
+# theme = Ryuuko
+# theme = Rapture
+# theme = Galaxy
+# theme = DotGov
+theme = Dark Modern
+# theme = Chester
+gtk-titlebar = false
+
+# Binds
+
+keybind = f3=scroll_page_lines:-1
+keybind = f4=scroll_page_lines:1
+keybind = home=scroll_to_top
+keybind = end=scroll_to_bottom
+keybind = ctrl+shift+x=clear_screen
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+shift+t=unbind
