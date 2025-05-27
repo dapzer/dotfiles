@@ -24,12 +24,19 @@ eval "$(starship init zsh)"
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
 
+export GOPATH=$HOME/go  # This is the default GOPATH
+export PATH=$PATH:$GOPATH/bin
+
 alias cu="chezmoi re-add"
 alias wifi="sh ~/bin/scripts/wifi-menu.sh"
 alias btm="sh ~/bin/scripts/rofi-bluetooth.sh"
 alias rm="rm -irf"
 alias archclean="pacman -Qtdq | sudo pacman -Rns -"
 alias "dps"='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.State}}\t{{.Status}}"'
+alias "mtf"='cd ~/dev/my-projects/movie-tracker'
+alias "mrf"='cd ~/dev/work-projects/mrnet_frontend'
+alias "vtf"='cd ~/dev/work-projects/vtrade'
 alias "spotx"="bash <(curl -sSL https://spotx-official.github.io/run.sh)"
+alias "ctop"="lazydocker"
 #alias jq="fx"
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
