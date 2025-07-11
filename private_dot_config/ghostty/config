@@ -2,8 +2,9 @@
 
 font-family = "JetBrainsMono Nerd Font"
 font-size = 16
-theme = Dark Modern
+# theme = Dark Modern
 # theme = rose-pine
+# theme = Breeze
 gtk-titlebar = false
 confirm-close-surface=false
 
