@@ -14,7 +14,7 @@
 # Thanks to x70b1 (https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/system-bluetooth-bluetoothctl)
 #
 # Depends on:
-#   Arch repositories: rofi, bluez-utils (contains bluetoothctl)
+#   Arch repositories: rofi, bluez-utils (contains bluetoothctl), bc
 
 # Constants
 divider="---------"
@@ -57,13 +57,12 @@ scan_on() {
 # Toggles scanning state
 toggle_scan() {
     if scan_on; then
-        kill $(pgrep -f "bluetoothctl scan on")
+        kill $(pgrep -f "bluetoothctl --timeout 5 scan on")
         bluetoothctl scan off
         show_menu
     else
-        bluetoothctl scan on &
+        bluetoothctl --timeout 5 scan on
         echo "Scanning..."
-        sleep 5
         show_menu
     fi
 }
@@ -185,10 +184,18 @@ print_status() {
     if power_on; then
         printf ''
 
-        paired_devices_cmd="devices Paired"
-        # Check if an outdated version of bluetoothctl is used to preserve backwards compatibility
-        if (( $(echo "$(bluetoothctl version | cut -d ' ' -f 2) < 5.65" | bc -l) )); then
-            paired_devices_cmd="paired-devices"
+        # Get bluetoothctl version safely
+        version=$(bluetoothctl version | cut -d ' ' -f 2 2>/dev/null)
+        if [[ ! $version =~ ^[0-9]+\.[0-9]+$ ]]; then
+            # Default to newer command if version check fails
+            paired_devices_cmd="devices Paired"
+        else
+            # Compare version using sort -V for robustness
+            if [[ $(echo -e "$version\n5.65" | sort -V | head -n1) == "$version" ]]; then
+                paired_devices_cmd="paired-devices"
+            else
+                paired_devices_cmd="devices Paired"
+            fi
         fi
 
         mapfile -t paired_devices < <(bluetoothctl $paired_devices_cmd | grep Device | cut -d ' ' -f 2)
@@ -212,7 +219,6 @@ print_status() {
         echo ""
     fi
 }
-
 # A submenu for a specific device that allows connecting, pairing, and trusting
 device_menu() {
     device=$1
