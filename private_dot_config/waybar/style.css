@@ -1,215 +1,526 @@
 * {
-    border: none;
-    font-size: 15px;
-    font-family: "JetBrains Mono", "Font Awesome 6 Free";
-    font-weight: 800;
-    /* font-size: 14.5px; */
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  font-weight: 800;
+  transition-property: background;
+  transition-duration: 0.5s;
+}
+
+#waybar.top {
+  background: none;
+  color: #C5C8C6;
+}
+/*#waybar.top > box.horizontal {*/
+/*  background: rgba(0, 0, 0, 0.5);*/
+/*  border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*  border-radius: 10px;*/
+/*  padding: 2pt;*/
+/*}*/
+#waybar.top > box.horizontal {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0px;
+  padding: 4pt;
+}
+
+#custom-vpn {
+  color: #C5C8C6;
+  margin-right: 10pt;
+}
+
+#custom-temperature {
+  margin-right: 10pt;
+}
+
+#custom-bluetooth {
+  color: #C5C8C6;
+  margin-right: 10pt;
+  font-size: 11pt;
+}
+
+#workspaces {
+  margin-left: 4pt;
+}
+#workspaces button {
+  color: #C5C8C6;
+  font-weight: 400;
+}
+#workspaces button:not(:first-child) {
+  margin-left: 3px;
+}
+/* #workspaces button.visible { */
+/*   color: #89b4fa; */
+/* } */
+#workspaces button.active {
+ color: #7ec3ff;
+}
+#workspaces button:hover,
+#workspaces button:focus {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+/* #workspaces button:hover:not(.active):not(.visible), */
+/* #workspaces button:focus:not(.active):not(.visible) { */
+/*   color: #9399b2; */
+/* } */
+
+#mpris {
+  background: #222222;
+  color: #C5C8C6;
+  border-radius: 12pt;
+  margin-left: 15pt;
+  padding: 0 8pt;
+}
+
+#window {
+  margin-left: 15pt;
+  margin-right: 20pt;
+}
+
+#memory {
+  color: #C5C8C6;
+  margin-right: 12pt;
+}
+
+#disk {
+  color: #C5C8C6;
+  margin-right: 12pt;
+}
+
+#clock {
+  margin-right: 6pt;
+}
+
+#cpu {
+  color: #C5C8C6;
+  margin-right: 12pt;
+}
+
+#custom-weather {
+  color: #fff9a7;
+  margin-right: 15pt;
+}
+
+#tray {
+  margin-right: 10pt;
+}
+#tray menu {
+  background: #222222;
+  padding: 2pt;
+}
+#tray menu * {
+  margin: 2pt;
+}
+#tray menu check {
+  margin-right: 4pt;
+}
+
+#language {
+  margin-right: 10pt;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #cdd6f4;
   }
-  
-  window#waybar {
-    /* background: rgba(170, 170, 170, 0.1); */
-    background: transparent;
-    border-radius: 0;
-  }
-  
-  tooltip {
-    color: black;
-    /* background-color: rgba(200, 200, 230, 0.9); */
-    border-radius: 10px;
-  }
-  
-  #cpu,
-  #memory,
-  #custom-player,
-  #idle_inhibitor,
-  #temperature,
-  #custom-caffeine,
-  #clock,
-  #battery,
-  #pulseaudio,
-  #network,
-  #workspaces,
-  #tray,
-  #backlight,
-  #window,
-  #disk,
-  #language,
-  #custom-notification {
-    /* margin-top: 2px; */
-    /* padding-top: 0px; */
-    background-color: rgba(90, 42, 145, 0.568);
-    border-radius: 80px;
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-  
-  /* text-align: center; */
-  /* } */
-  #workspaces {
-    /* font-family: Poppins; */
-    /* background-color : rgba(170, 170, 170,0.1); */
-    margin-left: 5px;
-    /* border-radius: 80px;
-    background-color: rgba(90, 42, 145, 0.568);  */
-    /* border: 0.2px solid rgba(170, 170, 170, 0.5); */
-    /* font-weight: 600; */
-  }
-  #workspaces button {
-    color: white;
-    opacity: 0.7;
-    margin: 0px 0 0 0px;
-    padding: 0px 9px;
-    transition: all 0.5s ease-in-out;
-    border: 0.1px solid rgba(0, 0, 0, 0.2);
-    /* border-color: cyan; */
-    /* border-width: 0.2px; */
-  }
-  
-  
-  
-  #workspaces button.active {
-    transition: all 0.5s ease-in-out;
-    /* border: 0.1px solid cyan; */
-    opacity: 1;
-    /* border-radius: 8px; */
-    color: white;
-    background-color: rgba(170, 170, 170, 0.2);
-    border-radius: 0;
-    /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
-  }
-  
-  #workspaces button.active {
-    border-radius: 80px;
-  } 
-  
-  #custom-player {
-    margin: 0 8px;
-    opacity: 0.95;
-  }
-  
-  #clock {
-    color: white;
-    /* background-color : rgba(0, 0, 0,0.4); */
-    /* box-shadow: rgba(17, 17, 27, 0.2) 0 0 3 2px; */
-    /* border-radius: 8px; */
-    padding: 0 8px;
-    /* border: 0.1px solid cyan; */
-  }
-  
-  #tray {
-    /* background-color: rgba(170, 170, 170, 0.3); */
-    margin-right: 10px;
-    padding: 0 8px;
-    /* border-radius: 8px; */
-  }
-  
-  #network {
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6); */
-    /* border-radius: 90px; */
-    /* border-left: none; */
-    padding: 0 8px;
-  }
-  
-  #idle_inhibitor {
-    margin: 0 2px;
-    color: rgba(170, 170, 170, 0.4);
-    opacity: 0.7;
-  }
-  #idle_inhibitor.activated {
-    transition: all 1.5s ease-in-out;
-    color: white;
-    opacity: 1;
-  }
-  
-  #temperature {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6); */
-    /* border-radius: 80px 0 0 80px; */
-    /* border-right: none; */
-    opacity: 0.9;
-  }
-  
-  #cpu {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 80px 0 0 80px;
-    border-right: none;
-    border-left: none; */
-    opacity: 0.9;
-  }
-  
-  #memory {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 80px 0 0 80px;
-    border-right: none;
-    border-left: none; */
-    opacity: 0.9;
-  }
-  
-  #disk {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 0 80px 80px 0;
-    border-left: none;
-    border-right: none; */
-    opacity: 0.9;
-  }
-  
-  #backlight {
-    margin-left: 5px;
-    padding: 0 8px;
-    color: white;
-    border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 80px 0 0 80px;
-    border-right: none;
-    opacity: 0.9;
-  }
-  
-  #pulseaudio {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 0 80px 80px 0;
-    border-left: none; */
-    opacity: 0.9;
-  }
-  
-  #battery {
-    color: white;
-    margin-left: 5px;
-    margin-right: 3px;
-    padding: 0 10px;
-    border-radius: 80px;
-    background-color: rgba(170, 170, 170, 0.1);
-  }
-  
-  #battery.plugged {
-    transition: all 1s ease-in-out;
-    border: 0.2px solid rgba(170, 170, 170, 0.6);
-    background: radial-gradient(
-      /* 60deg, */ rgba(33, 234, 150, 0.5),
-      transparent /* rgba(170, 170, 170,0.2) */
-    );
-  }
-  
-  #language {
-    padding: 0 8px;
-    color: white;
-    /* border: 0.2px solid rgba(170, 170, 170, 0.6);
-    border-radius: 80px 0 0 80px;
-    border-right: none;
-    border-left: none; */
-    opacity: 0.9;
-  }
-  
-  #custom-notification {
-    color: white;
-    padding-left: 13px;
-    padding-right: 10px;
-  }
+}
+
+#pulseaudio {
+  color: #C5C8C6;
+  margin-right: 10pt;
+}
+
+#custom-color-picker {
+  margin-left: 6pt;
+  margin-right: 6pt;
+  font-size: 10pt;
+}
+
+#custom-swaync {
+  margin-left: 6pt;
+  margin-right: 6pt;
+  font-size: 10pt;
+}
+
+#custom-power {
+  margin-left: 6pt;
+  margin-right: 11pt;
+  font-size: 10pt;
+}
+
+#waybar.bottom {
+  background: none;
+}
+#waybar.bottom box.modules-center {
+  background: #222222;
+  margin-top: 5pt;
+  padding: 0 4pt;
+  border-top-left-radius: 10pt;
+  border-top-right-radius: 10pt;
+  box-shadow: 0 0 3pt #181825;
+}
+
+#custom-file-manager {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/file-manager.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-terminal {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/terminal.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-zen {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/zen.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-spotify {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/spotify.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 1pt;
+}
+
+#custom-obs-studio {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/obs-studio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-discord {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/discord.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-telegram {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-whatsapp {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/whatsapp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-adobe-photoshop {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/adobe-photoshop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-gimp {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/gimp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-pinta {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/pinta.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-inkscape {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/inkscape.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-davinci-resolve {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/davinci-resolve.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-steam {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/steam.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-heroic {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/heroic.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-ryujinx {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/ryujinx.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-lutris {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/lutris.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-obsidian {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/obsidian.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-unity {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/unity.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-jetbrains-rider {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/jetbrains-rider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-jetbrains-idea {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/jetbrains-idea.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-jetbrains-pycharm {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/jetbrains-pycharm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-jetbrains-webstorm {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/jetbrains-webstorm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-neovim {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/neovim.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-vs-code {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/vs-code.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-docker {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/docker.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-beekeeper-studio {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/beekeeper-studio.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-excalidraw {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/excalidraw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-figma {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/figma.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-bruno {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/bruno.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+#custom-calculator {
+  background: transparent;
+  background-image: url("/home/dapzer/.config/waybar/icons/calculator.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28pt;
+  font-size: 28pt;
+  padding: 0 6pt;
+  margin: 0 2pt;
+}
+
+/*#custom-anki {*/
+/*  background: transparent;*/
+/*  background-image: url("/home/dapzer/.config/waybar/icons/anki.svg");*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: 28pt;*/
+/*  font-size: 28pt;*/
+/*  padding: 0 6pt;*/
+/*  margin: 0 2pt;*/
+/*}*/
+
+
+tooltip {
+  background: #222222;
+  color: #cdd6f4;
+  border-radius: 5pt;
+}
+
+/*# sourceMappingURL=style.css.map */
