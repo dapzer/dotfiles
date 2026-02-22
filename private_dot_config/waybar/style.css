@@ -46,6 +46,7 @@
 #workspaces button {
   color: #C5C8C6;
   font-weight: 400;
+  fill-size: 11pt;
 }
 #workspaces button:not(:first-child) {
   margin-left: 3px;
