@@ -11,6 +11,7 @@
         "modules-right": [
             "hyprland/language",
             "custom/bluetooth",
+            "network",
             "pulseaudio",
             "memory",
             "cpu",
@@ -174,5 +175,22 @@
             "interval": 5,
             "format": "{percentage_free}%  "
         },
+        "network": {
+            "interface": "wlan0",
+            "format": "\uE0D9",
+            "format-wifi": " \uE0D9 {essid} ({signalStrength}%)",
+            "format-ethernet": "{ifname} ",
+            "format-disconnected": "\uE0D9",
+            "format-disabled": "",
+            "tooltip-format": "{ifname}",
+            "tooltip-format-wifi": "{essid} ({signalStrength}%) \uE0D9",
+            "tooltip-format-ethernet": "{ifname} ",
+            "tooltip-format-disconnected": "Disconnected",
+            "on-click": "vicinae vicinae://extensions/dagimg-dot/wifi-commander/manage-saved-networks",
+            "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
+//            "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
+            "max-length": 50,
+            "interval": 1
+        }
     }
 ]

@@ -40,13 +40,19 @@
   font-size: 11pt;
 }
 
+#network {
+  color: #C5C8C6;
+  margin-right: 10pt;
+  font-size: 11pt;
+}
+
 #workspaces {
-  margin-left: 4pt;
+  margin-left: 8pt;
 }
 #workspaces button {
   color: #C5C8C6;
   font-weight: 400;
-  fill-size: 11pt;
+  font-size: 11pt;
 }
 #workspaces button:not(:first-child) {
   margin-left: 3px;
@@ -149,7 +155,7 @@
 
 #custom-power {
   margin-left: 6pt;
-  margin-right: 11pt;
+  margin-right: 8pt;
   font-size: 11pt;
 }
 
