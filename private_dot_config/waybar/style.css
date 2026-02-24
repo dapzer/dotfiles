@@ -55,7 +55,7 @@
   font-size: 11pt;
 }
 #workspaces button:not(:first-child) {
-  margin-left: 3px;
+  margin-left: 6px;
 }
 /* #workspaces button.visible { */
 /*   color: #89b4fa; */
