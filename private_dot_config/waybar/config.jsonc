@@ -148,15 +148,19 @@
         },
         "pulseaudio": {
             "format": "{icon} <b>{volume}%</b>",
-            "format-muted": "󰝟",
+            "format-muted": "󰝟 Muted",
             "format-bluetooth": "{icon}  <b>{volume}%</b>",
-            "format-bluetooth-muted": "󰝟 ",
+            "format-bluetooth-muted": "󰝟  Muted",
             "format-icons": {
                 "headset": "",
                 "default": ["󰕿", "󰖀", "󰕾"]
             },
             "tooltip": true,
-            "on-click": "pavucontrol"
+            "on-click": "pavucontrol",
+            "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+            "on-scroll-up":   "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+            "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+            "scroll-step": 1
         },
         "custom/color-picker": {
             "format": "",
