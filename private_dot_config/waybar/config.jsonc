@@ -6,13 +6,18 @@
         "margin-bottom": 0,
         "margin-left": 0,
         "margin-right": 0,
-        "modules-left": ["hyprland/workspaces", "mpris"],
+        "modules-left": [
+            "hyprland/workspaces"
+//            "mpris"
+        ],
         "modules-center": ["clock"],
         "modules-right": [
             "hyprland/language",
             "custom/bluetooth",
             "network",
             "pulseaudio",
+            "battery",
+            "backlight",
             "memory",
             "cpu",
             "custom/temperature",
@@ -191,6 +196,23 @@
 //            "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
             "max-length": 50,
             "interval": 1
+        },
+        "battery": {
+            "format": "{icon} {percentage}%",
+            "format-charging": "{icon} {percentage}%",
+            "format-discharging": "{icon} {percentage}%",
+            "format-full": "{icon} {percentage}%",
+            "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "tooltip-format": "{status}\r{percentage}%\r{time}",
+            "on-click": "tilix -e watch -n 30 acpi"
+        },
+        "backlight": {
+            "format": "\uF185 {percentage}%",
+            "on-click": "tilix -e watch -n 1 brightnessctl",
+            "interval": 1,
+            "on-scroll-up":   "light -A 5",
+            "on-scroll-down": "light -U 5",
+            "min-brightness": 10
         }
     }
 ]

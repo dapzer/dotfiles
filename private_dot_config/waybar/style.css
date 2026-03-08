@@ -106,6 +106,16 @@
   margin-right: 12pt;
 }
 
+#battery {
+  color: #C5C8C6;
+  margin-right: 12pt;
+}
+
+#backlight {
+  color: #C5C8C6;
+  margin-right: 12pt;
+}
+
 #custom-weather {
   color: #fff9a7;
   margin-right: 15pt;
