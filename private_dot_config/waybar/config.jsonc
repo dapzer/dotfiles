@@ -202,20 +202,28 @@
             "interval": 1
         },
         "battery": {
-            "format": "{icon} {percentage}%",
-            "format-charging": "{icon} {percentage}%",
-            "format-discharging": "{icon} {percentage}%",
-            "format-full": "{icon} {percentage}%",
+            "bat": "BAT0",
+            "adapter": "AC",
+            "format": "{icon} {capacity}%",
+            "format-charging": "{icon} {capacity}%",
+            "format-discharging": "{icon} {capacity}%",
+            "format-full": "{icon} {capacity}%",
             "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-            "tooltip-format": "{status}\r{percentage}%\r{time}",
-            "on-click": "tilix -e watch -n 30 acpi"
+            "tooltip-format": "{capacity}%\n{time}",
+            "states": {
+                "warning": 30,
+                "critical": 15
+            },
+            "interval": 60
         },
         "backlight": {
-            "format": "\uF185 {percentage}%",
-            "on-click": "tilix -e watch -n 1 brightnessctl",
+            "device": "amdgpu_bl1",
+            "format": "\uF185 {percent}%",
             "interval": 1,
             "on-scroll-up":   "light -A 5",
+            "on-click":   "light -A 5",
             "on-scroll-down": "light -U 5",
+            "on-click-right": "light -U 5",
             "min-brightness": 10
         }
     }
