@@ -17,6 +17,7 @@ packages=(
   "obsidian-bin"
   "vlc"
   "mpv"
+  "bitwarden-bin"
 )
 
 for item in "${packages[@]}"; do
