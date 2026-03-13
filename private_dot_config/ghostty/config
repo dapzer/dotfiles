@@ -5,8 +5,19 @@ font-size = 16
 # theme = Dark Modern
 # theme = rose-pine
 # theme = Breeze
+theme = Hybrid
+# theme = Later This Evening
+# theme = Miasma
+# theme = Elegant
+# theme = Wilmersdorf
+# theme = Idea
+
 gtk-titlebar = false
 confirm-close-surface=false
+shell-integration = zsh
+tab-inherit-working-directory = false
+split-inherit-working-directory = false
+window-inherit-working-directory = false
 
 # Binds
 
@@ -17,3 +28,4 @@ keybind = end=scroll_to_bottom
 keybind = ctrl+shift+x=clear_screen
 keybind = ctrl+shift+r=reload_config
 keybind = ctrl+shift+t=unbind
+keybind = ctrl+shift+e=unbind
