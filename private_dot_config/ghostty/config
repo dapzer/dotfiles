@@ -12,6 +12,9 @@ theme = Hybrid
 # theme = Wilmersdorf
 # theme = Idea
 
+# background = #000
+background-opacity = 0.8
+
 gtk-titlebar = false
 confirm-close-surface=false
 shell-integration = zsh
