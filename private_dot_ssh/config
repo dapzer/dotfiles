@@ -1,6 +1,6 @@
 Include ~/.ssh/configPrivate
 
-Host movietracker
+Host movietracker-infra
 	HostName 185.254.97.132
 	user root
 
