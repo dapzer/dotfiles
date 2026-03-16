@@ -10,6 +10,7 @@ packages=(
   "xorg-xhost"
   "wl-clipboard"
   "downgrade"
+  "reflector"
   "btop"
   "tilix"
   "ghostty"
