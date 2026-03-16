@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-systemctl enable tlp.service
+systemctl --user enable --now hyprpolkitagent.service
+systemctl enable bluetooth.service
