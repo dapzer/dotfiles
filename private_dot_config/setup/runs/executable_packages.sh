@@ -7,6 +7,7 @@ packages=(
   "micro"
   "archlinux-keyring"
   "hyprpolkitagent"
+  "xdg-desktop-portal-hyprland"
   "xorg-xhost"
   "wl-clipboard"
   "downgrade"
