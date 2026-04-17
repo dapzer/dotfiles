@@ -1,0 +1,37 @@
+# ~/.config/mouseless/config.yaml
+
+baseMouseSpeed: 500.0
+baseScrollSpeed: 20.0
+comboTime: 100
+
+layers:
+  - name: initial
+    bindings:
+      w+d:  layer mouse
+
+  - name: mouse
+    passThrough: true          # unmapped keys still work normally
+    bindings:
+      # Exit mouse mode (tap Q to go back to normal typing)
+      q: layer initial
+
+      # Keep mouse mode active while holding Space (optional but useful)
+      space: layer mouse
+
+      # === Movement ===
+      w: move 0 -1     # up
+      a: move -1 0     # left
+      s: move 0 1      # down
+      d: move 1 0      # right
+
+      # === Clicks ===
+      e: button left      # left click
+      r: button right     # right click  (note: this overrides the "exit" binding above when held)
+
+      # === Speed control (hold while moving) ===
+      rightshift: speed 3.0     # fast
+      rightalt:   speed 0.4     # slower / more precise
+
+      # Scroll (optional, using nearby keys)
+      t: scroll up
+      f: scroll down
