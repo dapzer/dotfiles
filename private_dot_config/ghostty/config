@@ -14,6 +14,7 @@ theme = Hybrid
 
 # background = #000
 background-opacity = 0.8
+selection-background = #eeeeee
 
 gtk-titlebar = false
 confirm-close-surface=false
