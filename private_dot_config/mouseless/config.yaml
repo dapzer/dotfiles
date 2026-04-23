@@ -30,7 +30,7 @@ layers:
 
       # === Speed control (hold while moving) ===
       rightshift: speed 3.0     # fast
-      rightalt:   speed 0.4     # slower / more precise
+      rightctrl:   speed 0.4     # slower / more precise
 
       # Scroll (optional, using nearby keys)
       t: scroll up
