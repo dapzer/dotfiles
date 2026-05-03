@@ -71,10 +71,10 @@
             "on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
             "sort-by-number": true,
             "active-only": false,
-            "persistent-workspaces": {
-                "DP-5": [ 1, 6 ],
-                "DP-4": [ 7, 12 ]
-            }
+//            "persistent-workspaces": {
+//                "DP-5": [ 1, 6 ],
+//                "DP-4": [ 7, 12 ]
+//            }
         },
         "mpris": {
             "format": "{player_icon}  {artist} - {title}",
