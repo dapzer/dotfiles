@@ -16,6 +16,9 @@ theme = Hybrid
 background-opacity = 0.8
 # selection-background = #eeeeee
 selection-background = #0b3fa8
+cursor-color = #ffffff
+cursor-opacity = 1
+adjust-cursor-thickness = 2
 
 gtk-titlebar = false
 confirm-close-surface=false
