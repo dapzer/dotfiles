@@ -136,7 +136,7 @@
         "custom/bluetooth": {
             "exec": "~/.config/waybar/scripts/bluetooth.sh",
             "interval": 10,
-            "on-click": "vicinae vicinae://extensions/Gelei/bluetooth/scan",
+            "on-click": "vicinae vicinae://launch/@Gelei/store.vicinae.bluetooth/scan",
             "tooltip": true,
             "tooltip-format": "Bluetooth",
             "format": "{}",
@@ -195,7 +195,7 @@
             "tooltip-format-wifi": "{essid} ({signalStrength}%) \uE0D9",
             "tooltip-format-ethernet": "{ifname} ",
             "tooltip-format-disconnected": "Disconnected",
-            "on-click": "vicinae vicinae://extensions/dagimg-dot/wifi-commander/manage-saved-networks",
+            "on-click": "vicinae vicinae://launch/@dagimg-dot/store.vicinae.wifi-commander/manage-saved-networks",
             "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
 //            "on-click-right": "~/.config/waybar/scripts/toggle_wifi.sh",
             "max-length": 50,
