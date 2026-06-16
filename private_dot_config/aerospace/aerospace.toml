@@ -11,7 +11,7 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # Keep Hypr-like numbered workspaces always available
-persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+# persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
 # Hypr monitor split: 1-6 on main, 7-12 on secondary
 [workspace-to-monitor-force-assignment]
