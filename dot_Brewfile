@@ -1,3 +1,4 @@
+tap "nikitabobko/tap", trusted: true
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -20,12 +21,16 @@ brew "pnpm"
 brew "starship"
 # JavaScript package manager
 brew "yarn"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
 # Desktop password and login vault
 cask "bitwarden"
 # Voice and text chat software
 cask "discord"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Peer-to-peer video and text chat
+cask "keet"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
