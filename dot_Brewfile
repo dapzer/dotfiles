@@ -1,0 +1,42 @@
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Modern and intuitive terminal-based text editor
+brew "micro"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# AI coding agent, built for the terminal
+brew "opencode"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# Cross-shell prompt for astronauts
+brew "starship"
+# JavaScript package manager
+brew "yarn"
+# Desktop password and login vault
+cask "bitwarden"
+# Voice and text chat software
+cask "discord"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Music streaming service
+cask "spotify"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# JavaScript IDE
+cask "webstorm"
+# Gecko based web browser
+cask "zen"
