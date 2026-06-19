@@ -1,15 +1,15 @@
 config-version = 2
 start-at-login = true
 
+# 'exec-and-forget open -a /Applications/OBS.app --args --scene replay --startreplaybuffer',
 after-startup-command = [
-    'exec-and-forget open -a /Applications/OBS.app --args --scene replay --startreplaybuffer',
     'exec-and-forget [ -d "/Applications/Telegram.app" ] && open -ga /Applications/Telegram.app; [ -d "/Applications/Discord.app" ] && open -ga /Applications/Discord.app; [ -d "/Applications/Pachca.app" ] && open -ga /Applications/Pachca.app; [ -d "/Applications/Keet.app" ] && open -ga /Applications/Keet.app; [ -d "/Applications/Spotify.app" ] && open -ga /Applications/Spotify.app'
 ]
 
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-
+accordion-padding = 0
 # Keep Hypr-like numbered workspaces always available
 # persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
@@ -34,7 +34,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     alt-b = '''exec-and-forget sleep 0.35; if pgrep -x zen >/dev/null; then /Applications/Zen.app/Contents/MacOS/zen --new-window about:blank; else open -a /Applications/Zen.app; fi'''
     alt-e = 'exec-and-forget open -a Finder'
     alt-d = 'exec-and-forget open -a Raycast'
-    alt-k = 'exec-and-forget open -a Calcurse'
+    alt-k = 'exec-and-forget open -na /Applications/Ghostty.app --args -e /opt/homebrew/bin/calcurse'
     alt-q = 'close --quit-if-last-window'
     alt-shift-q = 'exec-and-forget pkill -x ghostty || true'
     alt-shift-r = 'reload-config'
@@ -93,8 +93,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     alt-shift-c = 'move-node-to-workspace 12'
 
     # Monitor focus (Hypr F1/F2 style)
-    f1 = 'focus-monitor main'
-    f2 = 'focus-monitor secondary'
+    # f1 = 'focus-monitor main'
+    # f2 = 'focus-monitor secondary'
 
     # Resize mode
     alt-r = 'mode resize'
