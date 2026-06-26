@@ -1,10 +1,14 @@
 tap "nikitabobko/tap", trusted: true
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Text-based personal organizer
+brew "calcurse"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Lazier way to manage everything docker
@@ -27,20 +31,36 @@ cask "nikitabobko/tap/aerospace", trusted: true
 cask "bitwarden"
 # Voice and text chat software
 cask "discord"
+# Collaborative team software
+cask "figma"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Platform for building proxies to bypass network restrictions
+cask "happ"
 # Peer-to-peer video and text chat
 cask "keet"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
+# Clipboard manager
+cask "maccy"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
+# Remote desktop
+cask "parsec"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # Music streaming service
 cask "spotify"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Multimedia player
+cask "vlc"
 # JavaScript IDE
 cask "webstorm"
 # Gecko based web browser
