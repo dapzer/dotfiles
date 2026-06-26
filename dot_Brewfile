@@ -43,6 +43,8 @@ cask "keet"
 cask "localsend"
 # Clipboard manager
 cask "maccy"
+# GameStream client
+cask "moonlight"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
