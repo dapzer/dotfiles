@@ -37,3 +37,4 @@ keybind = ctrl+shift+x=clear_screen
 keybind = ctrl+shift+r=reload_config
 keybind = ctrl+shift+t=unbind
 keybind = ctrl+shift+e=unbind
+keybind = command+d=unbind
