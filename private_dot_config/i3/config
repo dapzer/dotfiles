@@ -19,8 +19,8 @@ set $ws11 "11"
 set $ws12 "12"
 
 # monitors
-set $Mon1 DP-4
-set $Mon2 DP-2
+set $Mon1 DP-2
+set $Mon2 DP-0
 #  set $Mon2 DP-4
 
 # workspace assignment
@@ -62,7 +62,7 @@ exec --no-startup-id "/usr/bin/gnome-keyring-daemon --start --components=ssh,sec
 exec --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 exec --no-startup-id "greenclip daemon>/dev/null"
 
-exec_always "feh --no-fehbg --bg-fill ~/Pictures/wolfwalkers.png"
+exec_always "feh --no-fehbg --bg-fill ~/Pictures/japan.jpg"
 
 exec --no-startup-id "killall picom && picom"
 exec --no-startup-id "killall i3bar"
@@ -71,7 +71,7 @@ exec --no-startup-id "~/.config/polybar/launch.sh"
 
 exec discord
 exec telegram-desktop
-exec AmneziaVPN
+# exec AmneziaVPN
 exec spotify
 exec ~/bin/pachca.AppImage
 
