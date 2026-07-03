@@ -3,5 +3,10 @@ use = "XYenon/clipboard"
 rev = "0ac0320"
 hash = "f80172438b4b5c31e94d6c891f734445"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "65559fd"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
+
 [flavor]
 deps = []
