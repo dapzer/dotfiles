@@ -32,7 +32,8 @@ accordion-padding = 0
     # App launch / session controls (Hypr workflow)
     alt-backtick = 'exec-and-forget open -na /Applications/Ghostty.app'
     alt-b = '''exec-and-forget sleep 0.35; if pgrep -x zen >/dev/null; then /Applications/Zen.app/Contents/MacOS/zen --new-window about:blank; else open -a /Applications/Zen.app; fi'''
-    alt-e = 'exec-and-forget open -a Finder'
+    # alt-e = 'exec-and-forget open -a Finder'
+    alt-e = 'exec-and-forget open -na /Applications/Ghostty.app --args -e /opt/homebrew/bin/yazi'
     alt-k = 'exec-and-forget open -na /Applications/Ghostty.app --args -e /opt/homebrew/bin/calcurse'
     alt-q = 'close --quit-if-last-window'
     alt-shift-q = 'exec-and-forget pkill -x ghostty || true'
