@@ -7,24 +7,44 @@ brew "calcurse"
 brew "chezmoi"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Play, record, convert, and stream many audio and video codecs
+brew "ffmpeg-full"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick-full", link: true
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Modern and intuitive terminal-based text editor
 brew "micro"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
 # Fast, disk space efficient package manager
 brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# SVG rendering tool and library
+brew "resvg"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Cross-shell prompt for astronauts
 brew "starship"
 # JavaScript package manager
 brew "yarn"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
 # Desktop password and login vault
@@ -33,12 +53,17 @@ cask "bitwarden"
 cask "discord"
 # Collaborative team software
 cask "figma"
+cask "font-symbols-only-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Web browser
+cask "google-chrome"
 # Platform for building proxies to bypass network restrictions
 cask "happ"
 # Peer-to-peer video and text chat
 cask "keet"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
 # Clipboard manager
@@ -67,3 +92,4 @@ cask "vlc"
 cask "webstorm"
 # Gecko based web browser
 cask "zen"
+npm "typescript"
