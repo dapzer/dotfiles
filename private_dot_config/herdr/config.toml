@@ -1,0 +1,6 @@
+[ui]
+agent_panel_sort = "spaces"
+
+[keys]
+next_agent = "ctrl+tab"
+previous_agent = "ctrl+shift+tab"
