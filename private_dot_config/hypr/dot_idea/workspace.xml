@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="404405c0-eeab-4477-8621-347fe9124f73" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/dapzer/.config/hypr" value="3A1NSglLz66r3BgdRnXqffcVVHn" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="12" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3A1NSglLz66r3BgdRnXqffcVVHn" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dapzer/local_destination_7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="404405c0-eeab-4477-8621-347fe9124f73" name="Changes" comment="" />
+      <created>1751530932312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751530932312</updated>
+      <workItem from="1751530933620" duration="287000" />
+      <workItem from="1771756119815" duration="20597000" />
+      <workItem from="1771787378610" duration="87000" />
+      <workItem from="1771787877781" duration="36000" />
+      <workItem from="1771842116424" duration="986000" />
+      <workItem from="1771871349222" duration="591000" />
+      <workItem from="1771931412373" duration="228000" />
+      <workItem from="1771959717597" duration="678000" />
+      <workItem from="1772010260311" duration="234000" />
+      <workItem from="1772010618643" duration="79000" />
+      <workItem from="1772020271888" duration="2476000" />
+      <workItem from="1772119178184" duration="6000" />
+      <workItem from="1772181024091" duration="90000" />
+      <workItem from="1772610863653" duration="19000" />
+      <workItem from="1772794402298" duration="56000" />
+      <workItem from="1772821785049" duration="42000" />
+      <workItem from="1773001934850" duration="2258000" />
+      <workItem from="1773217467647" duration="652000" />
+      <workItem from="1773220003632" duration="2051000" />
+      <workItem from="1773348971603" duration="2591000" />
+      <workItem from="1773391027203" duration="304000" />
+      <workItem from="1773733628307" duration="2141000" />
+      <workItem from="1774371098138" duration="626000" />
+      <workItem from="1774968270577" duration="665000" />
+      <workItem from="1776678273609" duration="113000" />
+      <workItem from="1776679024770" duration="209000" />
+      <workItem from="1776967359744" duration="691000" />
+      <workItem from="1777031869543" duration="204000" />
+      <workItem from="1777824229066" duration="7000" />
+      <workItem from="1778845771737" duration="687000" />
+      <workItem from="1778855483318" duration="3608000" />
+      <workItem from="1779108506810" duration="35000" />
+      <workItem from="1782282671640" duration="41000" />
+      <workItem from="1783157152058" duration="459000" />
+      <workItem from="1783171872828" duration="1516000" />
+      <workItem from="1783195273127" duration="27000" />
+      <workItem from="1783246487219" duration="54000" />
+      <workItem from="1784103350938" duration="211000" />
+      <workItem from="1784215301901" duration="15000" />
+      <workItem from="1784217800703" duration="1855000" />
+      <workItem from="1784237207800" duration="714000" />
+      <workItem from="1784292505302" duration="695000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
