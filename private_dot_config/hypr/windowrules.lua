@@ -120,3 +120,12 @@ hl.window_rule({
     },
     fullscreen = false,
 })
+
+hl.window_rule({
+    name = "hide_env_edit",
+    no_screen_share = true,
+    match = {
+        class = "^(jetbrains-webstorm|com.mitchellh.ghostty)$",
+        title = ".*\\.env.*"
+    }
+})
