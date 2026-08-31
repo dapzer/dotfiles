@@ -16,7 +16,7 @@
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="12" />
+    <option name="cachedIndexableFilesCount" value="29" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="McpProjectServerCommands">
@@ -72,7 +72,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
       </set>
     </attachedChunks>
   </component>
@@ -125,6 +125,7 @@
       <workItem from="1784217800703" duration="1855000" />
       <workItem from="1784237207800" duration="714000" />
       <workItem from="1784292505302" duration="695000" />
+      <workItem from="1788171989599" duration="214000" />
     </task>
     <servers />
   </component>
