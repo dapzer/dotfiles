@@ -19,6 +19,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/h
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("hyprpicker -an"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("handy --toggle-transcription"))
 hl.bind("F8", hl.dsp.pass({ window = "class:^(discord)$" }))
+hl.bind(alt .. " + Z", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
 
 -- Smart navigation: same keys cycle group OR move focus
 hl.bind(mainMod .. " + left", hl.dsp.exec_cmd("~/.config/hypr/scripts/smart-focus.sh l"))
