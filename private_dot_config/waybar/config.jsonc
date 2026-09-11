@@ -15,6 +15,7 @@
             "hyprland/language",
             "custom/bluetooth",
             "network",
+            "pulseaudio#microphone",
             "pulseaudio",
             "battery",
             "backlight",
@@ -161,6 +162,13 @@
             "on-scroll-up":   "pactl set-sink-volume @DEFAULT_SINK@ +1%",
             "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
             "scroll-step": 1
+        },
+        "pulseaudio#microphone": {
+            "format": "{format_source}",
+            "format-source": "",
+            "format-source-muted": "󰍭",
+            "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+            "tooltip-format": "Mic muted"
         },
         "custom/color-picker": {
             "format": "",

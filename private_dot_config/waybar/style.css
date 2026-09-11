@@ -151,6 +151,11 @@
   margin-right: 10pt;
 }
 
+#pulseaudio.microphone {
+  color: #f38ba8;
+  margin-right: 10pt;
+}
+
 #custom-color-picker {
   margin-left: 6pt;
   margin-right: 6pt;
