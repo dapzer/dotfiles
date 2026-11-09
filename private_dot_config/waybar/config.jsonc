@@ -12,22 +12,30 @@
         ],
         "modules-center": ["clock"],
         "modules-right": [
+            "custom/privacy",
             "hyprland/language",
             "custom/bluetooth",
             "network",
             "pulseaudio#microphone",
             "pulseaudio",
             "battery",
-            "backlight",
             "memory",
             "cpu",
             "custom/temperature",
             //            "disk",
-//            "tray",
+            "tray",
 //            "custom/color-picker",
             "custom/swaync",
             "custom/power"
         ],
+        "custom/privacy": {
+            "format": "{}",
+            "exec": "~/.config/waybar/scripts/obs-privacy.sh status",
+            "return-type": "json",
+            "interval": "once",
+            "signal": 10,
+            "tooltip": true
+        },
         "custom/vpn": {
             "format": "",
             "exec": "echo '{\"class\": \"connected\"}'",
@@ -145,7 +153,18 @@
         },
         "tray": {
             "icon-size": 15,
-            "spacing": 10
+            "spacing": 10,
+            "ignore-list": [
+                "Throne",
+                "spotify",
+                "TelegramDesktop",
+                "vicinae",
+                "discord",
+                "obs",
+                "Xwayland Video Bridge",
+                "Pachca",
+                "Sunshine"
+            ]
         },
         "pulseaudio": {
             "format": "{icon} <b>{volume}%</b>",
