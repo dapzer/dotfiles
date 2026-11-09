@@ -47,6 +47,7 @@ hl.config({
 
         touchpad = {
             natural_scroll = false,
+            clickfinger_behavior = true,
         },
 
         sensitivity = -0.8,
@@ -70,7 +71,7 @@ hl.config({
 
     decoration = {
         rounding = 0,
-        rounding_power = 0,
+        -- rounding_power = 0,
 
         active_opacity = 1.0,
         inactive_opacity = 1.0,
@@ -131,6 +132,11 @@ hl.config({
     misc = {
         force_default_wallpaper = 0,
     },
+})
+
+hl.device({
+    name = "apple-inc.-magic-trackpad",
+    sensitivity = -0.1,
 })
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/

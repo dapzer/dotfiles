@@ -17,9 +17,12 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(vars.browser))
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(vars.terminal .. " -e calcurse"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("hyprpicker -an"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("handy --toggle-transcription"))
 hl.bind("F8", hl.dsp.pass({ window = "class:^(discord)$" }))
 hl.bind(alt .. " + Z", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
+
+-- OBS: show/hide Desktop and WebCam KB together and update the Waybar privacy indicator
+hl.bind("CTRL + SHIFT + code:35", hl.dsp.exec_cmd("~/.config/waybar/scripts/obs-privacy.sh show"))
+hl.bind("CTRL + SHIFT + code:33", hl.dsp.exec_cmd("~/.config/waybar/scripts/obs-privacy.sh hide"))
 
 -- Smart navigation: same keys cycle group OR move focus
 hl.bind(mainMod .. " + left", hl.dsp.exec_cmd("~/.config/hypr/scripts/smart-focus.sh l"))
