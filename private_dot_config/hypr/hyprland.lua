@@ -48,6 +48,7 @@ hl.config({
         touchpad = {
             natural_scroll = false,
             clickfinger_behavior = true,
+            tap_to_click = false,
         },
 
         sensitivity = -0.8,
@@ -137,6 +138,7 @@ hl.config({
 hl.device({
     name = "apple-inc.-magic-trackpad",
     sensitivity = -0.1,
+    scroll_factor = 0.35,
 })
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
